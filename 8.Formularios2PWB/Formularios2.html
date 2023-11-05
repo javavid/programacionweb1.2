@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+	<!--<Con esta linea definimos el lenguaje>-->
+	<html lang="es">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="author" content="Harrisson Zapata">
+			<meta name="descriotion" content="Primera Pagina Web">
+			<meta name="viewport" content="width=devide-width, initial-scale=1.0">
+			<title>Primera página web</title>
+		</head>
+		
+		<body>
+		
+		<h1>Formularios 2</h1>
+		<!--<recordar que ponemos # porque no se ha definido a que pagina direccionar los datos del formulario>-->
+		<!--<el parametro "autocomplete" es para que no autocompleto los texbox>-->
+		<form action="#" method="GET" autocomplete="off">
+		
+		
+		<h3>Radio Button seleecionar una opcion</h3>
+		<p>
+			<input type="radio" name="experiencia" value="junior">Junior
+			<br>
+			<input type="radio" name="experiencia" value="semi senior">Semi Senior
+			<br>
+			<!--<el parametro "checked" es para que se seleccione de manera predeterminada ese radio>-->
+			<input type="radio" name="experiencia" value="senior" checked>Senior
+			<br>
+			<input type="radio" name="experiencia" value="ninguna">Ninguna
+		</p>
+		
+			
+		<h3>Radio Button seleecionar varias opciones</h3>
+		<p>
+			<!--<Miremos el name con los diferentes nombres o grupos>-->
+			<input type="radio" name="experiencia" value="junior">Junior
+			<br>
+			<input type="radio" name="experiencia" value="semi senior">Semi Senior
+			<br>
+			<!--<el parametro "checked" es para que se seleccione de manera predeterminada ese radio>-->
+			<input type="radio" name="experiencia1" value="senior" checked>Senior
+			<br>
+			<input type="radio" name="experiencia1" value="ninguna">Ninguna
+		</p>
+		
+		
+		<h3>Checkbox</h3>
+		
+		<p>
+			<!--<Tambien se puede mandar en la URL un dato predefinido usando "value">-->
+			<input type="checkbox" name="futbol" value="PracticaFutbol">Futbol
+			<br>
+			<input type="checkbox" name="basquetbol">Basquetbol
+			<br>
+			<input type="checkbox" name="beisbol">Beisbol
+			<br>
+			<input type="checkbox" name="voleibol">Voleibol
+			<br>
+			<!--<el parametro "checked" es para que se seleccione de manera predeterminada ese radio>-->
+			<input type="checkbox" name="otro" checked>Otro
+			<br>
+		</p>
+		
+		
+		<p>
+		<h3>Lista Desplegable</h3>
+		</p>
+		
+		<p>
+			<Select>
+				<option>Azul</option>
+				<option>Amarillo</option>
+				<option>Rojo</option>
+				<option>Verde</option>
+				<!--<el parametro "selected" permite cargar predefinido ese valor>-->
+				<option selected>Ninguno</option>
+			</select>
+		</p>
+		
+		
+		<p>
+		<h3>Caja de Texto con Buscador</h3>
+		</p>
+		<p>
+			<label>Buscador:</label>
+			<input list="buscar">
+			<datalist id="buscar">
+				<option>Azul</option>
+				<option>Amarillo</option>
+				<option>Rojo</option>
+				<option>Verde</option>
+			</datalist>		
+		</p>
+		
+		<p>
+		<h3>Cargar un Archivo</h3>
+		</p>
+			
+		<p>
+			<!--<el parametro "accept" definimos los tipos de archivos permitidos>-->
+			<!--<el parametro "multiple" permite cargar mas de un archivo>-->
+			<input type="file" name="archivo" accept=".pdf, imagen/*" multiple>
+		</p>
+		
+		
+		
+		
+		
+		<p>
+			<!--<Mirar la URL al antes y despues de dar clie en el boton como se usa metodo GET los parametros van en la URL>-->
+			<button type="submit">Enviar</button>
+		
+		</p>
+		
+		<p>
+		<h3>Limpiemos el formulario con un boton</h3>
+		</p>
+		
+		<p>
+			<button type="reset">Limpiar</button>
+		</p>
+		
+		</body>
+	</html>
+	
+

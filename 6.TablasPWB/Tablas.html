@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+	<!--<Con esta linea definimos el lenguaje>-->
+	<html lang="es">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="author" content="Harrisson Zapata">
+			<meta name="descriotion" content="Primera Pagina Web">
+			<meta name="viewport" content="width=devide-width, initial-scale=1.0">
+			<title>Primera página web</title>
+		</head>
+		
+		<body>
+		<!--<Con esta linea le darmo un borde a la tabla>-->
+		<table border="1"> 
+		<!--<Con esta linea le damos un titulo a la tabla>-->
+		<caption>Productos</caption>
+		<br>
+		<thead>
+			<tr>
+				<!--<Estas lineas serian los encabezados de nuestra tabla>-->
+				<th>Nombre</th>
+				<th>Precios</th>
+				<th>Existencias</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<!--<Estas lineas serian los detalles de nuestra tabla>-->
+			<tr>
+				<td>Cocacola</td>
+				<td>$10</td>
+				<td>50</td>
+			</tr>
+			<tr>
+				<td>Pepsi</td>
+				<td>$12</td>
+				<td>150</td>
+			</tr>
+		</tbody>
+		
+		<tfoot>
+			<tr>
+				<td></td>
+				<td></td>
+				<td>200</td>
+			</tr>
+		</tfoot>
+		</table>
+		
+			
+<br>
+<h1>Este es otro tipo de tabla combinando celdas en la fila<h1>
+<br>
+			
+		<table border="1" style="width: 50%"> 
+		<caption>Combinacion de celdas en fila</caption>
+			<tr>
+				<td>Clase A</td>
+				<td>Clase B</td>
+				<td>Clase C</td>
+			</tr>
+			<tr>
+				<!--<aqui combinamos 2 celdas en la tabla>-->
+				<td colspan="2">X</td>
+				<td>Y</td>
+			</tr>
+			
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+		</table>
+
+<br>
+<h1>Este es otro tipo de tabla combinando celdas en la fila<h1>
+<br>
+
+		<table border="1" style="width: 50%"> 
+		<caption>Combinacion de celdas en Columna</caption>
+			<tr>
+				<td>Clase A</td>
+				<td>Clase B</td>
+				<td>Clase C</td>
+			</tr>
+			<tr>
+				<!--<aqui combinamos 2 celdas en la tabla>-->
+				<td>X</td>
+				<td>Z</td>
+				<td rowspan="2">Y</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				
+			</tr>
+			
+		</table>
+
+<br>
+<h1>Algunos estilos en la tabla<h1>
+<br>	
+		<table border="1" style="width: 50%"> 
+		<caption>Estilos basicos en Columna</caption>
+		
+		<colgroup>
+			<col style="width: 10%; background: yellow"/>
+			<col style="width: 20%; background: red"/>
+			<col style="width: 10%; background: blue"/>
+		</colgroup>
+				
+			<tr>
+				<td>Clase A</td>
+				<td>Clase B</td>
+				<td>Clase C</td>
+			</tr>
+			<tr>
+				<!--<aqui combinamos 2 celdas en la tabla>-->
+				<td>X</td>
+				<td>Z</td>
+				<td rowspan="2">Y</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				
+			</tr>
+			
+		</table>
+
+		
+		</body>
+	</html>
+	
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+	<!--<Con esta linea definimos el lenguaje>-->
+	<html lang="es">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="author" content="Harrisson Zapata">
+			<meta name="descriotion" content="Primera Pagina Web">
+			<meta name="viewport" content="width=devide-width, initial-scale=1.0">
+			<title>Primera página web</title>
+		</head>
+		
+		<body>
+		
+		<h1>FORMULARIO</h1>
+		<!--<Si tenemos otra pagina a donde direccionar los datos del formulario remplazamos #>-->
+		<!--para que no muestre el historico de los campos adicionamos este atributo despues del POST autocomplete="off"-->
+		<form action="#" method="POST">
+			<p>
+				<label for="nombre">Nombre:</label>
+				<!--"Size" se define la longitud del texbox-->
+				<!--"maxlength" es para delimitar el numero de caracteres en el texbox-->
+				<!--"required" es para definir el campo como obligatorio-->
+				<!--"placeholder" es para poner un texto en el texbox de manera informativa-->
+				<input type="text" id="nombre" name="nombre" size="50" maxlength="10" placeholder="Introduce tu nombre" required/>
+			</p>
+		
+		
+			<p>
+				<label for="password">Contraseña:</label>
+				<!--"autofocus" es para definir en que campo se posiciona el cursor-->
+				<input type="password" id="password" name="password" required autofocus/>
+			</p>
+			
+			<p>
+				<label for="correo">Correo:</label>
+				<input type="email" id="correo" name="correo"/> 
+			</p>
+			
+			<p>
+				<label for="url">URL:</label>
+				<input type="url" id="url" name="url"/> 
+			</p>
+			
+			<p>
+				<label for="numero">Numero:</label>
+				<!--"number" es para definir que es de tipo numero y me pone flechitas en el texbox-->
+				<!--"min" numero donde inicia, "max" donde finaliza "step" de cuanto en cuanto cambia-->
+				<input type="number" id="numero" name="numero" min="5" max="100" step="3"/> 
+			</p>
+			
+			<p>
+				<label for="fecha">FECHA:</label>
+				<input type="date" id="fecha" name="fecha"/> 
+			</p>
+			
+			<p>
+				<!--"datetime" aplica mucho mejor en dispositivos moviles-->
+				<label for="fecha2">FECHA y HORA:</label>
+				<input type="datetime" id="fecha2" name="fecha2"/> 
+			</p>
+			
+			<p>
+				<!--"month" aplica mucho mejor en dispositivos moviles-->
+				<label for="fecha3">MES:</label>
+				<input type="month" id="fecha3" name="fecha3"/> 
+			</p>
+			
+			<p>
+				<!--"week" aplica mucho mejor en dispositivos moviles-->
+				<label for="fecha3">MES:</label>
+				<input type="week" id="fecha3" name="fecha3"/> 
+			</p>
+			
+			<p>
+				<!--"time" aplica mucho mejor en dispositivos moviles-->
+				<label for="fecha3">MES:</label>
+				<input type="time" id="fecha3" name="fecha3"/> 
+			</p>
+			
+			<p>
+				<input type="range"/> 
+			</p>
+			
+			<p>
+				<input type="color"/> 
+			</p>
+			
+			<p>
+				<label for="observaciones">Observaciones:</label>
+				<br>
+				<!--"textarea" es un control diferente de tipo input-->
+				<!--"cols" Sedefine el numero de filas "rows" el numero de columnas-->
+				<textarea id="observaciones" name="observaciones" cols="50" rows="5"/></textarea> 
+			</p>
+			
+			<p>
+				<button type="submit">Enviar</button> 
+			</p>
+			
+		</form>
+	
+		</body>
+	</html>
+	
+
